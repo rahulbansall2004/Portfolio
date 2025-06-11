@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Bansal - Creative Technologist</title>
+  <!-- Three.js & GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">Loading ...</div>
+
+  <!-- Landing Section with 3D Scene -->
+  <section class="landing">
+    <canvas id="three-canvas"></canvas>
+    <div class="landing-overlay">
+      <h1 class="neon-title">Rahul Bansal</h1>
+      <button class="cta-button">Enter Portfolio</button>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section with Flip Card -->
+  <section id="about" class="section">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="rahul-avatar.jpg.jpg" alt="Rahul Avatar" />
+        </div>
+        <div class="flip-card-back">
+          <h2>Hello, I'm Rahul!</h2>
+          <p>
+            A creative technologist fusing art and code. I build immersive, interactive experiences.
+          </p>
+          <p class="signature">- Rahul</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section with 3D Styled Cards -->
+  <section id="skills" class="section">
+    <div class="skills-grid">
+      <div class="skill" data-skill="HTML">
+        <div class="skill-icon">HTML</div>
+        <div class="tooltip">HTML5</div>
+      </div>
+      <div class="skill" data-skill="CSS">
+        <div class="skill-icon">CSS</div>
+        <div class="tooltip">CSS3</div>
+      </div>
+      <div class="skill" data-skill="JS">
+        <div class="skill-icon">JS</div>
+        <div class="tooltip">JavaScript</div>
+      </div>
+      <!-- You can add more skills as needed -->
+    </div>
+  </section>
+
+  <!-- Projects Section with 3D Carousel -->
+  <section id="projects" class="section">
+    <div class="carousel">
+      <div class="project-card" data-project="project1">
+        <img src="project1-thumb.jpg" alt="Project 1" />
+      </div>
+      <div class="project-card" data-project="project2">
+        <img src="project2-thumb.jpg" alt="Project 2" />
+      </div>
+      <!-- More project cards can be added -->
+    </div>
+    <!-- Modal for Project Details -->
+    <div class="project-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Project Title</h2>
+        <p>Details about the project will appear here, along with links to GitHub and live demo.</p>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Form & 3D Map Simulation -->
+  <section id="contact" class="section">
+    <div class="contact-wrapper">
+      <form id="contact-form">
+        <div class="form-floating">
+          <input type="text" id="name" required placeholder=" " />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" id="email" required placeholder=" " />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-floating">
+          <textarea id="message" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+      <div class="map-placeholder">
+        <!-- 3D Map simulation or floating icons using CSS animations -->
+        <div class="map-icon pulse"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
