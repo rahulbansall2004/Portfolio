@@ -22,7 +22,7 @@ A futuristic, scroll-triggered portfolio designed for **Rahul Bansal, Creative T
 📦 Portfolio ┣ 📂 assets/ ┃ ┣ 📜 rahul.png ┃ ┣ 📜 project1-thumb.jpg ┃ ┣ 📜 project2-thumb.jpg ┣ 📜 index.html ┣ 📜 styles.css ┣ 📜 script.js ┣ 📜 README.md
 
 ## 🖥️ **Live Demo**
-[🌐 View the live portfolio](#) *(Replace with actual URL)*
+[🌐 View the live portfolio](#) *https://rahulbansall2004.github.io/Portfolio/*
 
 ## 🔧 **Installation & Setup**
 1. Clone this repository:
